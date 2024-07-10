@@ -4,98 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
-    <style>
-        body {
-            background-color: rgb(89, 89, 153);
-            font-family: sans-serif;
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-        }
-
-        .s1 {
-            color: orange;
-        }
-
-        .p1 {
-            text-align: center;
-            color: white;
-        }
-
-        .s2 {
-            text-decoration: underline;
-            text-decoration-color: orange;
-        }
-
-        .left img {
-            width: 300px;
-            height: 350px;
-            border: 1px solid yellow;
-            margin-left: 50px;
-            margin-top: 50px;
-            border-radius: 10px;
-        }
-
-        .right {
-            width: 600px;
-            color: white;
-            margin-left: 50px;
-            margin-top: 60px;
-            padding: 5px;
-        }
-
-        .s3 {
-            font-size: larger;
-            color: orange;
-            font-weight: bold;
-        }
-
-        .card {
-            display: flex;
-        }
-
-        pre {
-            font-size: 16px;
-        }
-
-        button {
-            border-radius: 7px;
-            background-color: orange;
-            padding: 10px 12px;
-            border: none;
-        }
-    </style>
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="headings">
-            <h1>About <span class="s1">Me</span></h1>
-            <p class="p1">I am qualified and professional web developer <br> Studying fr<span class="s2">om EVS
-                    Insti</span><span>tute</span> </p>
+    <div class="main">
+        <nav>
+            <img src="assets/images/logo.svg" alt="Remote image">
+            <div>
+                <button class="btn">English</button>
+                <button class="btn-1">Sign In</button>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="hero">
+            <span class="ch-1">Unlimited movies, TV shows, and more</span>
+            <span>Watch anywhere. Cancel anytime.</span>
+            <span>
+                Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="down-1">
+                <input type="text" placeholder="Email address" class="inp-1">
+                <button class="btn-2">Get Started</button>
+            </div>
         </div>
-    </header>
-    <div class="card">
-        <div class="left">
-            <img src="https://i.postimg.cc/0QMnqQk2/mypict.jpg" alt="Error loaing image">
+    </div>
+    <div class="separation"></div>
+    <section class="first">
+        <div class="main-2">
+            <span class="span-1">Enjoy on your TV</span><br>
+            <span class="span-2">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</span>
         </div>
-        <div class="right">
-            <p>Hello, I am <span class="s3">Wasif Ali.</span></p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim earum officiis veniam? Non quisquam voluptate dolor voluptatum impedit obcaecati quo, deleniti voluptatem laudantium at dolores expedita nobis esse ad assumenda debitis laboriosam iure commodi optio magni quas sequi atque? Natus quis, odit voluptatum soluta maxime maiores dolor beatae officiis tempore!</p>
-            <pre>
-Father Name          Lore ipsum.
-Age                  Lore ipsum.
-Height               Lore ipsum.
-Phone Number         Lore ipsum.
-Email Address        Lore ipsum.
-
-
-<button>Download CV</button>
-           </pre>
+        <div class="pic1">
+            <img src="assets/images/tv.netflix.png" alt="Remote image">
+            <video src="assets/videos/video.netflix.m4v" autoplay loop controls muted></video>
         </div>
+    </section>
+    <div class="separation"></div>
+    <section class="first">
+        <div class="pic1">
+            <img src="assets/images/mobile-0819.jpg" alt="Remote image">
+        </div>
+        <div class="main-2">
+            <span class="span-1">Download your shows to watch offline</span><br>
+            <span class="span-2">Save your favorites easily and always have something to watch.</span>
+        </div>
+    </section>
+    <div class="separation"></div>
+    <section class="first">
+        <div class="pic1">
+            <img src="assets/images/kids.png" alt="Remote image">
+        </div>
+        <div class="main-2">
+            <span class="span-1">Create profiles for kids</span><br>
+            <span class="span-2">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</span>
+        </div>
+    </section>
+    <div class="separation"></div>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <span>What is Netflix?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>How much does Netflix cost?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>Where can I watch?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>How do I cancel?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>What can I watch on Netflix?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>Is Netflix good for kids?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </section>
+    <div class="separation"></div>
+    <footer>
+        <div class="questions">
+            Questions? Contact us.
+        </div>
+        <div class="footer">
+        <div class="footer-items">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="footer-items">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="footer-items">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="footer-items">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <span class="sp01">
+            Netflix Pakistan
+        </span>
+    </div>
+</footer>
 </body>
-
 </html>
+
