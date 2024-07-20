@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    background-color: black;
+}
+
+.main {
+    background: url(https://i.postimg.cc/W3Sk3d1G/main-netflix.jpg) no-repeat center center;
+    /* background-size: max(1200px, 100vw); */
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    width: 80vw;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav .btn-1 {
+    padding: 10px 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+nav .btn {
+    padding: 7px 13px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: rgba(219, 208, 208, 0.185);
+    border: 1px solid white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.hero {
+    /* height: calc(100% - 130px); */
+    height: 80vh;
+    /* height for your kind information 
+     flex direction depend... */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    gap: 17px;
+    text-align: center;
+    padding: 23px 10px;
+}
+
+.hero .ch-1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        width: 90vw;
+    }
+    nav img{
+        width: 90px;
+    }
+    nav .btn{
+        padding: 5px 9px;
+    }
+    nav .btn-1{
+        padding: 7px 10px;
+    }
+    .btn-2{
+        margin-top: 10px;
+    }
+   .hero{
+    height: 60vh;
+   }
+   .hero .ch-1{
+    font-size: 30px;
+    font-weight: 700;
+   }
+   .hero :nth-child(2){
+    font-size: 20px;
+   }
+   .hero :nth-child(3){
+    font-size: 16px;
+   }
+   .hero .inp-1{
+    padding-right: 80px;
+   }
+}
+
+
+.btn-2 {
+    padding: 13px 24px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+}
+
+.inp-1 {
+    padding-top: 20px;
+    padding-bottom: 14px;
+    padding-left: 9px;
+    padding-right: 200px;
+    border-radius: 6px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border: 1px solid rgba(219, 208, 208, 0.5);
+}
+
+::placeholder {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgba(206, 186, 186, 0.322);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    height: 75vh;
+    margin: auto;
+}
+
+.main-2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.pic1 {
+    position: relative;
+}
+
+@media screen and (max-width:900px) {
+    .first{
+        flex-wrap: wrap;
+        /* Understand the concept of wrap-reverse */
+        height: 85vh;
+    }
+    .first .span-1{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .first .span-2{
+        font-size: 18px;
+    }
+}
+
+.first .pic1 img{
+    position: relative;
+    z-index: 10;
+    width: 400px;
+}
+
+.pic1 video {
+    position: absolute;
+    top: 57px;
+    right: 0;
+    width:340px;
+}
+
+.span-1 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.span-2 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.faq {
+    padding: 34px;
+    color: white;
+}
+
+.faq h2 {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.faqbox {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 20px;
+    max-width: 72vw;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+@media screen and (max-width:800px) {
+    .faq h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .first .pic1 img{
+        width: 250px;
+    }
+    .first .pic1 video{
+        width: 210px;
+        top: 40px;
+    }
+}
+.faqbox:hover {
+    background-color: rgb(131, 126, 126);
+}
+
+.faqbox svg {
+    color: white;
+}
+
+footer {
+    color: white;
+    height: 56vh;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer .questions {
+    padding: 60px 0 30px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-items a {
+    font-size: 14px;
+    color: white;
+}
+
+footer span {
+    padding-top: 30px;
+}
+@media screen and (max-width:360px) {
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* If media not working then take it 
+in the last. */
